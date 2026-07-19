@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS planner_state (
+  key TEXT PRIMARY KEY,
+  data JSONB NOT NULL,
+  updated_at TIMESTAMPTZ DEFAULT NOW()
+);
